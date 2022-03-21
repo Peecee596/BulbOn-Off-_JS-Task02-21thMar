@@ -2,9 +2,15 @@ console.log("change")
 
 function lightOn(){
     // console.log('menu')
-    document.getElementById('img').src='./images/pic_bulbon.gif'
+    let bulbLight=document.getElementById('img')
+
+    if(bulbLight.src.match('pic_bulboff')){
+        bulbLight.src='./images/pic_bulbon.gif'
+       
+    }
+    else{
+        bulbLight.src='./images/pic_bulboff.gif'
+    }
+       
    
-}
-function lightOff(){
-    document.getElementById('img').src='./images/pic_bulboff.gif'
 }
